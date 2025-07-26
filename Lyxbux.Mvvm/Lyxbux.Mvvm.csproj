@@ -9,4 +9,10 @@
     <OutputPath>C:\Publish</OutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Lyxbux.Registry">
+      <HintPath>..\..\..\..\..\Publish\Lyxbux.Registry.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
