@@ -21,5 +21,18 @@ namespace Lyxbux.Mvvm
 
             return null;
         }
+
+        public static bool RegisterSafeService(ISafeService service)
+        {
+            return RegisterService("ISafeService", service);
+        }
+        public static bool UnregisterSafeService()
+        {
+            return UnregisterService("ISafeService");
+        }
+        public static ISafeService? GetSafeService()
+        {
+            return (ISafeService?)GetService("ISafeService");
+        }
     }
 }
